@@ -18,7 +18,7 @@ $(function(){
         return false;
     });
 
-    $("body").click(function() {
+    $("html").click(function() {
         if(isMenuShown) {
             isMenuShown = false;
             $("nav#actionbar-menu").hide();

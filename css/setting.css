@@ -66,46 +66,47 @@ input, select {
 body {
   width: 100%;
   min-height: 100%;
+  color: #8d4832;
 }
 
-/* line 22, ../sass/setting.scss */
+/* line 25, ../sass/setting.scss */
 span.dummy {
   display: none;
   visibility: hidden;
 }
 
-/* line 28, ../sass/setting.scss */
+/* line 31, ../sass/setting.scss */
 header.actionbar {
   position: fixed;
   z-index: 100;
   width: 100%;
-  background: #f5d7ae;
+  background: #ecdfc9;
 }
 @media screen and (min-width: 600px) {
-  /* line 28, ../sass/setting.scss */
+  /* line 31, ../sass/setting.scss */
   header.actionbar {
     height: 80px;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 28, ../sass/setting.scss */
+  /* line 31, ../sass/setting.scss */
   header.actionbar {
     height: 50px;
   }
 }
-/* line 39, ../sass/setting.scss */
+/* line 42, ../sass/setting.scss */
 header.actionbar div.actionbar-wrap {
   max-width: 1000px;
   margin: 0 auto;
 }
-/* line 43, ../sass/setting.scss */
+/* line 46, ../sass/setting.scss */
 header.actionbar h1 {
   float: left;
   background-position: center center;
   background-repeat: no-repeat;
 }
 @media screen and (min-width: 600px) {
-  /* line 43, ../sass/setting.scss */
+  /* line 46, ../sass/setting.scss */
   header.actionbar h1 {
     background-image: url("../img/share/title.png");
     width: 100px;
@@ -113,7 +114,7 @@ header.actionbar h1 {
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 43, ../sass/setting.scss */
+  /* line 46, ../sass/setting.scss */
   header.actionbar h1 {
     background-image: url("../img/share/title-sp.png");
     background-size: auto 60%;
@@ -121,60 +122,78 @@ header.actionbar h1 {
     height: 50px;
   }
 }
-/* line 58, ../sass/setting.scss */
+/* line 61, ../sass/setting.scss */
 header.actionbar h1 a {
   display: block;
   width: 100%;
   height: 100%;
 }
 @media screen and (min-width: 600px) {
-  /* line 63, ../sass/setting.scss */
+  /* line 66, ../sass/setting.scss */
   header.actionbar h1 a:after {
     content: "";
     float: right;
     width: 1px;
     height: 80%;
     margin: 10px 0;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(141, 72, 50, 0.3);
   }
 }
 @media screen and (min-width: 600px) {
-  /* line 75, ../sass/setting.scss */
+  /* line 78, ../sass/setting.scss */
   header.actionbar a.actionbar-menu-btn {
     display: none;
   }
-  /* line 78, ../sass/setting.scss */
+  /* line 81, ../sass/setting.scss */
   header.actionbar nav {
     float: left;
   }
-  /* line 80, ../sass/setting.scss */
+  /* line 83, ../sass/setting.scss */
   header.actionbar nav ul {
     padding: 0 10px;
   }
-  /* line 82, ../sass/setting.scss */
+  /* line 85, ../sass/setting.scss */
   header.actionbar nav ul li {
     height: 100%;
     line-height: 80px;
-    padding: 0 20px;
     float: left;
   }
-  /* line 87, ../sass/setting.scss */
+  /* line 89, ../sass/setting.scss */
   header.actionbar nav ul li a {
-    color: white;
+    font-size: 18px;
+    padding: 0 20px;
+    display: block;
+    height: 100%;
+    color: #8d4832;
+  }
+  /* line 95, ../sass/setting.scss */
+  header.actionbar nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  /* line 98, ../sass/setting.scss */
+  header.actionbar nav ul li a img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px;
+    vertical-align: -2px;
+  }
+  /* line 104, ../sass/setting.scss */
+  header.actionbar nav ul li a span {
+    display: none;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 95, ../sass/setting.scss */
+  /* line 113, ../sass/setting.scss */
   header.actionbar a.actionbar-menu-btn {
     float: right;
   }
-  /* line 97, ../sass/setting.scss */
+  /* line 115, ../sass/setting.scss */
   header.actionbar a.actionbar-menu-btn img {
     width: 30px;
     height: 30px;
     padding: 10px;
   }
-  /* line 103, ../sass/setting.scss */
+  /* line 121, ../sass/setting.scss */
   header.actionbar nav {
     display: none;
     position: fixed;
@@ -182,44 +201,100 @@ header.actionbar h1 a {
     right: 5px;
     width: 50%;
   }
-  /* line 109, ../sass/setting.scss */
+  /* line 127, ../sass/setting.scss */
   header.actionbar nav ul {
     background: white;
     box-shadow: 0 1px 1px 1px #ccc;
     border-radius: 5px;
     padding: 10px 0;
   }
-  /* line 114, ../sass/setting.scss */
+  /* line 132, ../sass/setting.scss */
   header.actionbar nav ul li {
     height: 100%;
     line-height: 50px;
   }
-  /* line 117, ../sass/setting.scss */
+  /* line 135, ../sass/setting.scss */
   header.actionbar nav ul li:hover {
     background: #eee;
   }
-  /* line 120, ../sass/setting.scss */
+  /* line 138, ../sass/setting.scss */
   header.actionbar nav ul li a {
-    padding: 0 20px;
     display: block;
-    color: #399;
+    padding: 0 20px;
+    color: #8d4832;
+  }
+  /* line 143, ../sass/setting.scss */
+  header.actionbar nav ul li img {
+    width: 20px;
+    height: 20px;
+    margin: 0 10px 0 0;
+    vertical-align: -2px;
   }
 }
 
-/* line 131, ../sass/setting.scss */
+/* line 155, ../sass/setting.scss */
 section.content-wrapper {
+  display: block;
   max-width: 960px;
   margin: 0 auto;
 }
 @media screen and (min-width: 600px) {
-  /* line 131, ../sass/setting.scss */
+  /* line 155, ../sass/setting.scss */
   section.content-wrapper {
     padding: 120px 20px 50px;
   }
 }
 @media screen and (max-width: 600px) {
-  /* line 131, ../sass/setting.scss */
+  /* line 155, ../sass/setting.scss */
   section.content-wrapper {
     padding: 80px 20px 50px;
   }
+}
+
+/* line 167, ../sass/setting.scss */
+footer.sp-menu {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: #ecdfc9;
+  overflow: hidden;
+}
+/* line 176, ../sass/setting.scss */
+footer.sp-menu ul li {
+  float: left;
+  width: 32%;
+  margin: 0 1% 0 0;
+  height: 50px;
+}
+/* line 180, ../sass/setting.scss */
+footer.sp-menu ul li:first-child {
+  margin: 0 1%;
+}
+/* line 183, ../sass/setting.scss */
+footer.sp-menu ul li:nth-child(2) {
+  width: 30%;
+  padding: 0 1%;
+  box-shadow: 0 0 0 1px rgba(141, 72, 50, 0.1);
+}
+/* line 189, ../sass/setting.scss */
+footer.sp-menu ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  line-height: 50px;
+  text-align: center;
+  color: #8d4832;
+}
+/* line 196, ../sass/setting.scss */
+footer.sp-menu ul li a:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+/* line 199, ../sass/setting.scss */
+footer.sp-menu ul li a img {
+  width: 20px;
+  height: 20px;
+  margin: 0 10px 0 0;
+  vertical-align: -3px;
 }
