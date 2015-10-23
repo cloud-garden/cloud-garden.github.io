@@ -19,6 +19,11 @@ body {
   min-height: 100%;
 }
 
+span.dummy {
+  display: none;
+  visibility: hidden;  
+}
+
 
 header.actionbar {
   position: fixed;
@@ -30,17 +35,20 @@ header.actionbar {
     height: 50px;
   }
   width: 100%;
-  background: #399;
+  background: #f5d7ae;
   div.actionbar-wrap {
     max-width: 1000px;
     margin: 0 auto;
   }
   h1 {
     @media screen and (min-width: 600px) {
+      background-image: url("../img/share/title.png");
       width: 100px;
       height: 80px;
     }
     @media screen and (max-width: 600px) {
+      background-image: url("../img/share/title-sp.png");
+      background-size: auto 60%;
       width: 70px;
       height: 50px;
     }
