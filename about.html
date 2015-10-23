@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <!--
-@author okashige
+@author matsuda
 -->
-
 <html>
 <head>
 	<meta charset="UTF-8">
@@ -15,7 +14,7 @@
 <header class="actionbar">
   <div class="actionbar-wrap">
 		<h1><a href="./index.html"><span class="dummy">Cloud Garden</span></a></h1>
-		<span class="now-page">ログ</span>
+		<span class="now-page">アプリ</span>
 		<a href="" class="actionbar-menu-btn" id="actionbar-menu-btn"><img src="./img/share/menu.png" alt="menu"></a>
 		<nav id="actionbar-menu">
 			<ul>
@@ -35,35 +34,19 @@
 
 	<!-- メインコンテンツ部分 -->
 	<div id="maincontent">
-		<div id="carousel" class="carousel slide" data-ride="carousel">
-			<!--中央に表示される丸いボタン-->
-			<ol class="carousel-indicators">
-				<!--
-				Carouselのid名を合わせる、スライダーの数だけ用意する
-				data-slide-toで何番目のスライドへ移動するか指定する、0から始めるので１つめのスライドなら0を指定
-				<li> data-target="#carousel_sample" data-slide-to="0" class="active"></li>
-				-->
-			</ol>
-
-			<!-- ここからCarouselの中身 -->
-			<div class="carousel-inner">
-				<!-- item = １ページ、activeを入れたところが最初に表示される.
-
-				<div class="item active">
-				<img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
-				</div>
-				-->
-			</div>
-
-			<!-- ページ送りボタン、ここもCarouselのid名を合わせる -->
-			<a class="left carousel-control" href="#carousel_sample" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-			<a class="right carousel-control" href="#carousel_sample" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+		<div>
+			<p>温度=<span id="temperature">0</span></p>
+			<p>湿度=<span id="humidy">0</span></p>
 		</div>
+		<p id="error"></p>
+		<div id="photos"></div>
+		<input id="update" type="button" value="更新">
 	</div>
 
-	<!-- 過去ログ部分 -->
-	<div id="logBox">
-		<div id="log"></div>
+	<!-- キャラクタ―部分 -->
+	<div id="charactercontent">
+		<div id="comment"></div>
+		<div id="charactor"></div>
 	</div>
 </section>
 

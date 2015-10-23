@@ -75,6 +75,9 @@ header.actionbar {
     }
   }
   @media screen and (min-width: 600px) {
+    span.now-page {
+      display: none;
+    }
     a.actionbar-menu-btn {
       display: none;
     }
@@ -110,6 +113,16 @@ header.actionbar {
     }
   }
   @media screen and (max-width: 600px) {
+    span.now-page {
+      display: block;
+      width: 300px;
+      height: 50px;
+      position: fixed;
+      left: 50%;
+      line-height: 50px;
+      text-align: center;
+      margin: 0 0 0 -150px;
+    }
     a.actionbar-menu-btn {
       float: right;
       img {

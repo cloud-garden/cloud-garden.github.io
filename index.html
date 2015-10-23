@@ -3,54 +3,64 @@
 @author okashige
 -->
 <html>
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="./css/setting.css" rel="stylesheet" type="text/css" />
+	<title>Cloud Garden</title>
+</head>
+<body>
+<!-- 画面全体 -->
+<header class="actionbar">
+  <div class="actionbar-wrap">
+		<h1><a href="./index.html"><span class="dummy">Cloud Garden</span></a></h1>
+		<span class="now-page">ホーム</span>
+		<a href="" class="actionbar-menu-btn" id="actionbar-menu-btn"><img src="./img/share/menu.png" alt="menu"></a>
+		<nav id="actionbar-menu">
+			<ul>
+			<li><a href="./index.html"><img src="./img/share/home.png">ホーム</a></li>
+			<li><a href="./schedule.html"><img src="./img/share/receipt.png">レシピ</a></li>
+			<li><a href="./pastState.html"><img src="./img/share/history.png">ログ</a></li>
+				<li class="actionbar-menu-about"><a href="./about.html"><img src="./img/share/about.png"><span>このアプリについて</span></a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<section class="content-wrapper">	<!-- ヘッダー部分 -->
+	<header>
+		<div id="time"></div>
+		<div id="vegetablename"></div>
+	</header>
 
-	<head>
-		<meta charset="UTF-8">
-		<title>Cloud Garden</title>
-	</head>
-
-	<body>
-		<!-- 画面全体 -->
-		<div id="mainWrapper">
-
-			<!-- ヘッダー部分 -->
-			<header>
-				<div id="time"></div>
-				<div id="vegetablename"></div>
-			</header>
-
-			<!-- メインコンテンツ部分 -->
-			<div id="maincontent">
-				<div id="currentstate">
-					<p>
-						温度=<span id="temperature">0</span>
-					</p>
-					<p>
-						湿度=<span id="humidy">0</span>
-					</p>
-				</div>
-				<p id="error"></p>
-				<div id="photos"></div>
-				<input id="update" type="button" value="更新">
-			</div>
-
-			<!-- キャラクタ―部分 -->
-			<div id="charactercontent">
-				<div id="comment"></div>
-				<div id="charactor"></div>
-			</div>
-
-			<!-- フッター部分 -->
-			<footer>
-				<dl id="menu">
-					<!--
-					<dt><img alt="TOP" src="*******.png"></dt>
-					<dt><img alt="リスト" src="*******.png"></dt>
-					<dt><a href="schedule.html"><img alt="スケジュール" src="*******.png" alt="スケジュール"></a></dt>
-					<dt><a href="pastState.html"><img alt="ログ" src="*******.png"></a></dt>
-					-->
-				</dl>
-			</footer>
+	<!-- メインコンテンツ部分 -->
+	<div id="maincontent">
+		<div>
+			<p>温度=<span id="temperature">0</span></p>
+			<p>湿度=<span id="humidy">0</span></p>
 		</div>
-	</body>
+		<p id="error"></p>
+		<div id="photos"></div>
+		<input id="update" type="button" value="更新">
+	</div>
+
+	<!-- キャラクタ―部分 -->
+	<div id="charactercontent">
+		<div id="comment"></div>
+		<div id="charactor"></div>
+	</div>
+</section>
+
+<!-- フッター部分 -->
+<footer class="sp-menu">
+	<nav>
+		<ul id="menu">
+			<li><a href="./index.html"><img src="./img/share/home.png">ホーム</a></li>
+			<li><a href="./schedule.html"><img src="./img/share/receipt.png">レシピ</a></li>
+			<li><a href="./pastState.html"><img src="./img/share/history.png">ログ</a></li>
+		</ul>
+	</nav>
+</footer>
+</body>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="./js/actionbar.js"></script>
 </html>
