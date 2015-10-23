@@ -1,11 +1,53 @@
+<!--
+	 @author okashige
+	-->
+
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<title>Cloud Garden</title>
 </head>
+
 <body>
-<h1>Cloud Garden</h1>
-<p>好きなとき、好きなだけ、農業しよっちゃ！</p>
+<!-- 画面全体 -->
+<div id="mainWrapper">
+
+<!-- ヘッダー部分 -->
+<header>
+	<div id="time"></div>
+	<div id="vegetablename"></div>
+</header>
+
+<!-- メインコンテンツ部分 -->
+<div id="maincontent">
+	<div>
+		<p>温度=<span id="temperature">0</span></p>
+		<p>湿度=<span id="humidy">0</span></p>
+	</div>
+	<p id="error"></p>
+	<div id="photos"></div>
+	<input id="update" type="button" value="更新">
+</div>
+
+<!-- キャラクタ―部分 -->
+<div id="charactercontent">
+	<div id="comment"></div>
+	<div id="charactor"></div>
+</div>
+
+<!-- フッター部分 -->
+<footer>
+	<dl id="menu">
+	<!--
+		<dt><img alt="TOP" src="*******.png"></dt>
+ 		<dt><img alt="リスト" src="*******.png"></dt>
+		<dt><a href="schedule.html"><img alt="スケジュール" src="*******.png" alt="スケジュール"></a></dt>
+		<dt><a href="pastState.html"><img alt="ログ" src="*******.png"></a></dt>
+	-->
+	</dl>
+</footer>
+</div>
 </body>
 </html>
