@@ -1,11 +1,69 @@
 <!DOCTYPE html>
+<!--
+@author okashige
+-->
 <html>
-<head>
-	<meta charset="UTF-8">
-	<title>Cloud Garden</title>
-</head>
-<body>
-<h1>Cloud Garden</h1>
-<p>好きなとき、好きなだけ、農業しよっちゃ！</p>
-</body>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Cloud Garden</title>
+	</head>
+
+	<body>
+		<!-- 画面全体 -->
+		<div id="mainWrapper">
+
+			<!-- ヘッダー部分 -->
+			<header>
+				<div id="pasttime"></div>
+				<div id="vegetablename"></div>
+			</header>
+
+			<!-- メインコンテンツ部分 -->
+			<div id="maincontent">
+				<div id="carousel" class="carousel slide" data-ride="carousel">
+					<!--中央に表示される丸いボタン-->
+					<ol class="carousel-indicators">
+						<!--
+						Carouselのid名を合わせる、スライダーの数だけ用意する
+						data-slide-toで何番目のスライドへ移動するか指定する、0から始めるので１つめのスライドなら0を指定
+						<li> data-target="#carousel_sample" data-slide-to="0" class="active"></li>
+						-->
+					</ol>
+
+					<!-- ここからCarouselの中身 -->
+					<div class="carousel-inner">
+						<!-- item = １ページ、activeを入れたところが最初に表示される.
+
+						<div class="item active">
+						<img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
+						</div>
+						-->
+					</div>
+
+					<!-- ページ送りボタン、ここもCarouselのid名を合わせる -->
+					<a class="left carousel-control" href="#carousel_sample" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
+					<a class="right carousel-control" href="#carousel_sample" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+				</div>
+			</div>
+		</div>
+
+		<!-- 過去ログ部分 -->
+		<div id="logBox">
+			<div id="log"></div>
+		</div>
+
+		<!-- フッター部分 -->
+		<footer>
+			<dl id="menu">
+				<!--
+				<dt><img alt="TOP" src="*******.png"></dt>
+				<dt><img alt="リスト" src="*******.png"></dt>
+				<dt><a href="schedule.html"><img alt="スケジュール" src="*******.png" alt="スケジュール"></a></dt>
+				<dt><a href="pastState.html"><img alt="ログ" src="*******.png"></a></dt>
+				-->
+			</dl>
+		</footer>
+		</div>
+	</body>
 </html>
