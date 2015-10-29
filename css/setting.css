@@ -291,6 +291,23 @@ section.content-wrapper {
 }
 
 /* line 195, ../sass/setting.scss */
+header.main-header {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+/* line 199, ../sass/setting.scss */
+header.main-header div {
+  display: inline-block;
+}
+/* line 201, ../sass/setting.scss */
+header.main-header div + div:before {
+  content: "の";
+  padding: 0 5px;
+  font-size: 0.8em;
+}
+
+/* line 209, ../sass/setting.scss */
 footer.sp-menu {
   position: fixed;
   bottom: 0;
@@ -301,24 +318,24 @@ footer.sp-menu {
   background: #ecdfc9;
   overflow: hidden;
 }
-/* line 205, ../sass/setting.scss */
+/* line 219, ../sass/setting.scss */
 footer.sp-menu ul li {
   float: left;
   width: 32%;
   margin: 0 1% 0 0;
   height: 50px;
 }
-/* line 209, ../sass/setting.scss */
+/* line 223, ../sass/setting.scss */
 footer.sp-menu ul li:first-child {
   margin: 0 1%;
 }
-/* line 212, ../sass/setting.scss */
+/* line 226, ../sass/setting.scss */
 footer.sp-menu ul li:nth-child(2) {
   width: 30%;
   padding: 0 1%;
   box-shadow: 0 0 0 1px rgba(141, 72, 50, 0.1);
 }
-/* line 218, ../sass/setting.scss */
+/* line 232, ../sass/setting.scss */
 footer.sp-menu ul li a {
   display: block;
   width: 100%;
@@ -327,11 +344,11 @@ footer.sp-menu ul li a {
   text-align: center;
   color: #8d4832;
 }
-/* line 225, ../sass/setting.scss */
+/* line 239, ../sass/setting.scss */
 footer.sp-menu ul li a:hover {
   background: rgba(255, 255, 255, 0.3);
 }
-/* line 228, ../sass/setting.scss */
+/* line 242, ../sass/setting.scss */
 footer.sp-menu ul li a img {
   width: 20px;
   height: 20px;

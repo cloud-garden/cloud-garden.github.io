@@ -192,6 +192,20 @@ section.content-wrapper {
   margin: 0 auto;
 }
 
+header.main-header {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  div {
+    display: inline-block;
+    &+div:before {
+      content: "の";
+      padding: 0 5px;
+      font-size: 0.8em;
+    }
+  }
+}
+
 footer.sp-menu {
   position: fixed;
   bottom: 0;

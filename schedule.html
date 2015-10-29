@@ -24,26 +24,27 @@
 	</div>
 </header>
 <section class="content-wrapper">	<!-- ヘッダー部分 -->
-	<header>
-		<div id="time"></div>
-		<div id="vegetablename"></div>
+	<header class="main-header">
+		<div id="date">2015年10月29日</div>
+		<div id="item-name">大根</div>
 	</header>
 
 	<!-- メインコンテンツ部分 -->
-	<div id="maincontent">
-		<div>
-			<p>温度=<span id="temperature">0</span></p>
-			<p>湿度=<span id="humidy">0</span></p>
-		</div>
-		<p id="error"></p>
-		<div id="photos"></div>
-		<input id="update" type="button" value="更新">
+	<div id="main-content" class="main-content">
+		<form>
+			<input type="text" id="feed-date">
+			<input type="text" id="feed-time">
+			<input type="checkbox" id="feed-routine">
+			<a href="#" id="create-schedule">send</a>
+		</form>
 	</div>
 
 	<!-- キャラクタ―部分 -->
-	<div id="charactercontent">
-		<div id="comment"></div>
-		<div id="charactor"></div>
+	<div id="character-content" class="character-content">
+		<div id="character-img" class="character-img"></div>
+		<div id="character-comment" class="character-comment">
+			<p>メッセージがここに表示されます。メッセージがここに表示されます。</p>
+		</div>
 	</div>
 </section>
 
@@ -60,4 +61,6 @@
 </body>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="./js/actionbar.js"></script>
+<script src="./js/setting.js"></script>
+<script src="./js/createSchedule.js"></script>
 </html>
