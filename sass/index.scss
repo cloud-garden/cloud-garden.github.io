@@ -1,0 +1,70 @@
+header.main-header {
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	div {
+		display: inline-block;
+	}
+}
+div.main-content {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: center center;
+	div.float-status {
+		position: absolute;
+		top: 0;
+		z-index: 10;
+		background: rgba(255, 255, 255, 0.8);
+		font-size: 2.5em;
+		padding: 25% 0;
+		margin: 15px;
+		border-radius: 100px;
+		span:after {
+			font-size: 0.5em;
+			padding: 0 0 0 5px;
+		}
+	}
+	div.home-temp {
+		width: 30%;
+		left: 0;
+		text-align: center;
+		span:after {
+			content: "℃";
+		}
+	}
+	div.home-hum {
+		width: 30%;
+		right: 0;
+		text-align: center;
+		span:after {
+			content: "%";
+		}
+	}
+}
+div.character-content {
+	position: absolute;
+	bottom: 60px;
+	width: 100%;
+	z-index: 20;
+	div.character-comment {
+		float: left;
+		width: 74%;
+		p {
+			margin: 20px;
+			padding: 20px;
+			background: rgba(255, 255, 255, 0.8);
+			border-radius: 15px;
+		}
+	}
+	div.character-img {
+		float: right;
+		width: 20%;
+		padding: 0 3%;
+		img {
+			width: 100px;
+		}
+	}
+}

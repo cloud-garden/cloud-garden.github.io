@@ -7,6 +7,7 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link href="./css/setting.css" rel="stylesheet" type="text/css" />
+  <link href="./css/index.css" rel="stylesheet" type="text/css" />
 	<title>Cloud Garden</title>
 </head>
 <body>
@@ -27,26 +28,32 @@
 	</div>
 </header>
 <section class="content-wrapper">	<!-- ヘッダー部分 -->
-	<header>
-		<div id="time"></div>
-		<div id="vegetablename"></div>
+	<header class="main-header">
+		<div id="time">2015年10月29日</div>
+		<div id="item-name">大根</div>
 	</header>
 
 	<!-- メインコンテンツ部分 -->
-	<div id="maincontent">
-		<div>
-			<p>温度=<span id="temperature">0</span></p>
-			<p>湿度=<span id="humidy">0</span></p>
+	<div id="main-content" class="main-content">
+		<div class="box home-temp">
+			<div class="float-status">
+				<span>18</span>
+			</div>
+		</div>
+		<div class="box home-hum">
+			<div class="float-status">
+				<span>46</span>
+			</div>
 		</div>
 		<p id="error"></p>
-		<div id="photos"></div>
-		<input id="update" type="button" value="更新">
 	</div>
 
 	<!-- キャラクタ―部分 -->
-	<div id="charactercontent">
-		<div id="comment"></div>
-		<div id="charactor"></div>
+	<div id="character-content" class="character-content">
+		<div id="charactor" class="character-img"><img src="img/home/character.png"></div>
+		<div id="comment" class="character-comment">
+			<p>メッセージがここに表示されます。メッセージがここに表示されます。メッセージがここに表示されます。</p>
+		</div>
 	</div>
 </section>
 
@@ -63,4 +70,7 @@
 </body>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="./js/actionbar.js"></script>
+<script src="./js/setting.js"></script>
+<script src="./js/getCurrentState.js"></script>
+<script src="./js/getPhoto.js"></script>
 </html>
