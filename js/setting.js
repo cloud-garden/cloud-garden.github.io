@@ -4,7 +4,7 @@ var wh = $(window).height();
 $(function(){
     checkIsMobile();
     if(isMobile) {
-        $("#main-content").css({"height": wh-150});
+        $("#main-content").css({"height": wh-130});
     }
 
     function checkIsMobile() {

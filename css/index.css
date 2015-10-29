@@ -1,16 +1,22 @@
 @charset "UTF-8";
 /* line 1, ../sass/index.scss */
 header.main-header {
-  height: 50px;
+  height: 30px;
   text-align: center;
-  line-height: 50px;
+  line-height: 30px;
 }
 /* line 5, ../sass/index.scss */
 header.main-header div {
   display: inline-block;
 }
+/* line 7, ../sass/index.scss */
+header.main-header div + div:before {
+  content: "の";
+  padding: 0 5px;
+  font-size: 0.8em;
+}
 
-/* line 9, ../sass/index.scss */
+/* line 14, ../sass/index.scss */
 div.main-content {
   position: relative;
   margin: 0;
@@ -19,69 +25,73 @@ div.main-content {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 16, ../sass/index.scss */
+/* line 21, ../sass/index.scss */
 div.main-content div.float-status {
   position: absolute;
   top: 0;
   z-index: 10;
   background: rgba(255, 255, 255, 0.8);
-  font-size: 2.5em;
+  font-size: 1.5em;
   padding: 25% 0;
   margin: 15px;
   border-radius: 100px;
 }
-/* line 25, ../sass/index.scss */
+/* line 30, ../sass/index.scss */
 div.main-content div.float-status span:after {
   font-size: 0.5em;
   padding: 0 0 0 5px;
 }
-/* line 30, ../sass/index.scss */
+/* line 35, ../sass/index.scss */
 div.main-content div.home-temp {
   width: 30%;
   left: 0;
   text-align: center;
 }
-/* line 34, ../sass/index.scss */
+/* line 39, ../sass/index.scss */
 div.main-content div.home-temp span:after {
   content: "℃";
 }
-/* line 38, ../sass/index.scss */
+/* line 43, ../sass/index.scss */
 div.main-content div.home-hum {
   width: 30%;
   right: 0;
   text-align: center;
 }
-/* line 42, ../sass/index.scss */
+/* line 47, ../sass/index.scss */
 div.main-content div.home-hum span:after {
   content: "%";
 }
 
-/* line 47, ../sass/index.scss */
+/* line 52, ../sass/index.scss */
 div.character-content {
   position: absolute;
-  bottom: 60px;
+  bottom: 55px;
   width: 100%;
+  height: 100px;
   z-index: 20;
 }
-/* line 52, ../sass/index.scss */
+/* line 58, ../sass/index.scss */
 div.character-content div.character-comment {
   float: left;
-  width: 74%;
+  width: 75%;
 }
-/* line 55, ../sass/index.scss */
+/* line 61, ../sass/index.scss */
 div.character-content div.character-comment p {
-  margin: 20px;
-  padding: 20px;
+  margin: 20px 10px;
+  padding: 15px 20px;
+  height: 40px;
+  overflow: hidden;
   background: rgba(255, 255, 255, 0.8);
   border-radius: 15px;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.2);
 }
-/* line 62, ../sass/index.scss */
+/* line 71, ../sass/index.scss */
 div.character-content div.character-img {
   float: right;
-  width: 20%;
-  padding: 0 3%;
-}
-/* line 66, ../sass/index.scss */
-div.character-content div.character-img img {
-  width: 100px;
+  width: 22%;
+  height: 100px;
+  margin: 0 3% 0 0;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
 }
