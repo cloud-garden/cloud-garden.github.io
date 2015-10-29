@@ -9,5 +9,6 @@ $(function() {
   	$.getJSON("http://54.199.139.148/cloud_garden_server/api/createSchedule", sendData, function(json){
 			console.log(json);
 		});
+    return false;
   });
 });
