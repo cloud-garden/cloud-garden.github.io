@@ -8,6 +8,8 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link href="./css/setting.css" rel="stylesheet" type="text/css" />
+  <link href="./css/photo-view.css" rel="stylesheet" type="text/css" />
+  <link href="./css/past-state.css" rel="stylesheet" type="text/css" />
 	<title>Cloud Garden</title>
 </head>
 <body>
@@ -28,42 +30,37 @@
 	</div>
 </header>
 <section class="content-wrapper">	<!-- ヘッダー部分 -->
-	<header>
-		<div id="time"></div>
-		<div id="vegetablename"></div>
+	<header class="main-header">
+		<div id="date">2015年10月29日</div>
+		<div id="item-name">大根</div>
 	</header>
 
 	<!-- メインコンテンツ部分 -->
-	<div id="maincontent">
-		<div id="carousel" class="carousel slide" data-ride="carousel">
-			<!--中央に表示される丸いボタン-->
-			<ol class="carousel-indicators">
-				<!--
-				Carouselのid名を合わせる、スライダーの数だけ用意する
-				data-slide-toで何番目のスライドへ移動するか指定する、0から始めるので１つめのスライドなら0を指定
-				<li> data-target="#carousel_sample" data-slide-to="0" class="active"></li>
-				-->
-			</ol>
-
-			<!-- ここからCarouselの中身 -->
-			<div class="carousel-inner">
-				<!-- item = １ページ、activeを入れたところが最初に表示される.
-
-				<div class="item active">
-				<img data-src="holder.js/900x500/auto/#777:#555/text:First slide" alt="First slide" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MDAiIGhlaWdodD0iNTAwIj48cmVjdCB3aWR0aD0iOTAwIiBoZWlnaHQ9IjUwMCIgZmlsbD0iIzc3NyIvPjx0ZXh0IHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ1MCIgeT0iMjUwIiBzdHlsZT0iZmlsbDojNTU1O2ZvbnQtd2VpZ2h0OmJvbGQ7Zm9udC1zaXplOjU2cHg7Zm9udC1mYW1pbHk6QXJpYWwsSGVsdmV0aWNhLHNhbnMtc2VyaWY7ZG9taW5hbnQtYmFzZWxpbmU6Y2VudHJhbCI+Rmlyc3Qgc2xpZGU8L3RleHQ+PC9zdmc+">
-				</div>
-				-->
-			</div>
-
-			<!-- ページ送りボタン、ここもCarouselのid名を合わせる -->
-			<a class="left carousel-control" href="#carousel_sample" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-			<a class="right carousel-control" href="#carousel_sample" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> </a>
+	<div id="main-content" class="main-content">
+		<div class="seek-past-btns">
+			<a href="#" class="seek-next" id="seek-next">&raquo;</a>
+			<a href="#" class="seek-prev" id="seek-prev">&laquo;</a>
 		</div>
-	</div>
-
-	<!-- 過去ログ部分 -->
-	<div id="logBox">
-		<div id="log"></div>
+		<div class="photo-view-box" id="photo-view-box">
+			<div class="photo-view" id="photo-view">
+				<div class="box home-temp">
+					<div class="float-status">
+						<span id="temperature"></span>
+					</div>
+				</div>
+				<div class="box home-hum">
+					<div class="float-status">
+						<span id="humidity"></span>
+					</div>
+				</div>
+				<input type="hidden">
+				<div class="log-content" id="log-content">
+					<ul>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<p id="error"></p>
 	</div>
 </section>
 
@@ -80,4 +77,8 @@
 </body>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 <script src="./js/actionbar.js"></script>
+<script src="./js/setting.js"></script>
+<script src="./js/getCurrentState.js"></script>
+<script src="./js/getPhoto.js"></script>
+<script src="./js/getPastState.js"></script>
 </html>

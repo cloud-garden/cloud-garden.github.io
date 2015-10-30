@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* line 1, ../sass/photo-view.scss */
+div.main-content {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+/* line 5, ../sass/photo-view.scss */
+div.main-content div.float-status {
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.6);
+  font-size: 1.5em;
+  padding: 25% 0;
+  margin: 15px;
+  border-radius: 100px;
+}
+/* line 15, ../sass/photo-view.scss */
+div.main-content div.float-status span:after {
+  font-size: 0.5em;
+  padding: 0 0 0 5px;
+}
+/* line 20, ../sass/photo-view.scss */
+div.main-content div.home-temp {
+  width: 30%;
+  left: 0;
+  text-align: center;
+}
+/* line 24, ../sass/photo-view.scss */
+div.main-content div.home-temp span:after {
+  content: "℃";
+}
+/* line 28, ../sass/photo-view.scss */
+div.main-content div.home-hum {
+  width: 30%;
+  right: 0;
+  text-align: center;
+}
+/* line 32, ../sass/photo-view.scss */
+div.main-content div.home-hum span:after {
+  content: "%";
+}
+/* line 36, ../sass/photo-view.scss */
+div.main-content div.seek-past-btns {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100%;
+}
+/* line 41, ../sass/photo-view.scss */
+div.main-content div.seek-past-btns a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  font-size: 3em;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
+}
+/* line 50, ../sass/photo-view.scss */
+div.main-content div.seek-past-btns a.seek-next {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  visibility: hidden;
+}
+/* line 56, ../sass/photo-view.scss */
+div.main-content div.seek-past-btns a.seek-prev {
+  position: absolute;
+  top: 40%;
+  left: 10px;
+}
+/* line 63, ../sass/photo-view.scss */
+div.main-content div.photo-view {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/* line 75, ../sass/photo-view.scss */
+div.main-content div.photo-view-box {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+/* line 79, ../sass/photo-view.scss */
+div.main-content div.photo-view-box div#photo-view-1, div.main-content div.photo-view-box div#photo-view-2, div.main-content div.photo-view-box div#photo-view-3, div.main-content div.photo-view-box div#photo-view-4 {
+  visibility: hidden;
+}

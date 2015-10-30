@@ -1,81 +1,4 @@
-@charset "UTF-8";
 /* line 1, ../sass/index.scss */
-div.main-content {
-  position: relative;
-  margin: 0;
-  padding: 0;
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-/* line 8, ../sass/index.scss */
-div.main-content div.float-status {
-  position: absolute;
-  top: 0;
-  z-index: 10;
-  background: rgba(255, 255, 255, 0.8);
-  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.6);
-  font-size: 1.5em;
-  padding: 25% 0;
-  margin: 15px;
-  border-radius: 100px;
-}
-/* line 18, ../sass/index.scss */
-div.main-content div.float-status span:after {
-  font-size: 0.5em;
-  padding: 0 0 0 5px;
-}
-/* line 23, ../sass/index.scss */
-div.main-content div.home-temp {
-  width: 30%;
-  left: 0;
-  text-align: center;
-}
-/* line 27, ../sass/index.scss */
-div.main-content div.home-temp span:after {
-  content: "℃";
-}
-/* line 31, ../sass/index.scss */
-div.main-content div.home-hum {
-  width: 30%;
-  right: 0;
-  text-align: center;
-}
-/* line 35, ../sass/index.scss */
-div.main-content div.home-hum span:after {
-  content: "%";
-}
-/* line 39, ../sass/index.scss */
-div.main-content div.seek-past-btns {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-/* line 43, ../sass/index.scss */
-div.main-content div.seek-past-btns a {
-  display: block;
-  width: 40px;
-  height: 40px;
-  font-size: 3em;
-  line-height: 40px;
-  text-align: center;
-  color: white;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.6);
-}
-/* line 52, ../sass/index.scss */
-div.main-content div.seek-past-btns a.seek-next {
-  position: absolute;
-  top: 40%;
-  right: 10px;
-}
-/* line 57, ../sass/index.scss */
-div.main-content div.seek-past-btns a.seek-prev {
-  position: absolute;
-  top: 40%;
-  left: 10px;
-}
-
-/* line 65, ../sass/index.scss */
 div.character-content {
   position: absolute;
   bottom: 55px;
@@ -83,12 +6,12 @@ div.character-content {
   height: 100px;
   z-index: 20;
 }
-/* line 71, ../sass/index.scss */
+/* line 7, ../sass/index.scss */
 div.character-content div.character-comment {
   float: left;
   width: 75%;
 }
-/* line 74, ../sass/index.scss */
+/* line 10, ../sass/index.scss */
 div.character-content div.character-comment p {
   margin: 20px 10px;
   padding: 15px 20px;
@@ -98,7 +21,7 @@ div.character-content div.character-comment p {
   border-radius: 15px;
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.6);
 }
-/* line 84, ../sass/index.scss */
+/* line 20, ../sass/index.scss */
 div.character-content div.character-img {
   float: right;
   width: 22%;
