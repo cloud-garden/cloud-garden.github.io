@@ -4,6 +4,8 @@
 	<meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link href="./css/setting.css" rel="stylesheet" type="text/css" />
+  <link href="./css/schedule.css" rel="stylesheet" type="text/css" />
+
 	<title>Cloud Garden</title>
 </head>
 <body>
@@ -32,9 +34,9 @@
 	<!-- メインコンテンツ部分 -->
 	<div id="main-content" class="main-content">
 		<form>
-			<input type="text" id="feed-date">
-			<input type="text" id="feed-time">
-			<input type="checkbox" id="feed-routine">
+			<input type="text" class="feed-date">
+			<input type="text" class="feed-time">
+			<input type="checkbox" class="feed-routine">
 			<a href="#" id="create-schedule">send</a>
 		</form>
 			<a href="#" id="delete-schedule">DELETE</a>
@@ -42,15 +44,18 @@
 	<!-- スケジュールログ表示部分 -->
 
 		<div id="schedule" class="schedule-content">
-			<div>
-				<div id="activeschedule" class="activeschedule"></div>
+			<ul id="tab_menu" class="tab_menu clearfix">
+				<li id="active"><a href="#activeschedule">実行予定</a></li>
+				<li id="past"><a href="#pastschedule">過去作業</a></li>
+			</ul>
+			<div id="activeschedule" class="page1">
+				active
 			</div>
-			<div>
-				<div id="pastschedule" class="pastschedule"></div>
+			<div id="pastschedule" class="page2">
+				past
 			</div>
 		</div>
 	</div>
-
 </section>
 
 <!-- フッター部分 -->
@@ -69,4 +74,5 @@
 <script src="./js/setting.js"></script>
 <script src="./js/createSchedule.js"></script>
 <script src="./js/deleteSchedule.js"></script>
+<script src="./js/schedule.js"></script>
 </html>
