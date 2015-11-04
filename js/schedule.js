@@ -2,9 +2,6 @@
  * タブメニューの動的処理
  */
 
-
-
-
 $("#active").click(function() {
 	$("#activeschedule").show();
 	$("#pastschedule").hide();

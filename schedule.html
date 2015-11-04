@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <link href="./css/setting.css" rel="stylesheet" type="text/css" />
   <link href="./css/schedule.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/humanity/jquery-ui.css" />
 
 	<title>Cloud Garden</title>
 </head>
 <body>
-<!-- 画面全体 -->
+<!-- ヘッダー部分-->
 <header class="actionbar">
   <div class="actionbar-wrap">
 		<h1><a href="./index.html"><span class="dummy">Cloud Garden</span></a></h1>
@@ -25,34 +26,51 @@
 		</nav>
 	</div>
 </header>
-<section class="content-wrapper">	<!-- ヘッダー部分 -->
-	<header class="main-header">
-		<div id="date">2015年10月29日</div>
-		<div id="item-name">大根</div>
-	</header>
+<!-- 本文部分 -->
+<section class="content-wrapper">
+	<div class="top">
+		<div id="r-time"><span id="view_time"></span></div>
+	</div>
 
-	<!-- メインコンテンツ部分 -->
+	<div id="item-name" class="item-name">
+		<h2>大根</h2>
+	</div>
+	<!-- メインコンテンツ -->
 	<div id="main-content" class="main-content">
+	<!-- 登録フォーム -->
+		<div id="registrationForm" class="registrationForm">
+		<p>水やり登録フォーム</p>
 		<form>
-			<input type="text" class="feed-date">
-			<input type="text" class="feed-time">
-			<input type="checkbox" class="feed-routine">
-			<a href="#" id="create-schedule">send</a>
+			<p>日付：<input type="text" id="datepicker" class="feed-date" placeholder="yyyy/xx/zz"></p>
+			<p id="date"></p>
+			<p>時間：<input type="text" placeholder="hh/mm" class="feed-time"></p>
 		</form>
-			<a href="#" id="delete-schedule">DELETE</a>
+		<form>
+		<input type="checkbox" class="feed-routine clearfix">繰り返し
+		<a href="#" id="create-schedule">登録</a>
+		</form>
+		</div>
 
 	<!-- スケジュールログ表示部分 -->
 
 		<div id="schedule" class="schedule-content">
 			<ul id="tab_menu" class="tab_menu clearfix">
 				<li id="active"><a href="#activeschedule">実行予定</a></li>
-				<li id="past"><a href="#pastschedule">過去作業</a></li>
+				<li id="past"><a href="#pastschedule">実行内容</a></li>
 			</ul>
 			<div id="activeschedule" class="page1">
-				active
+				<div id="taskconts1" class="taskconts1">
+				<h2>水やり実行予定</h2>
+				</div>
+				<div id="logconts1" class="logconts1"></div>
 			</div>
 			<div id="pastschedule" class="page2">
-				past
+				<div id="taskconts2" class="taskconts2">
+				<h2>実行した水やり</h2>
+				</div>
+				<div id="logconts2" class="logconts2">
+					<a href="#" id="delete-schedule">DELETE</a>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -70,9 +88,13 @@
 </footer>
 </body>
 <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
 <script src="./js/actionbar.js"></script>
 <script src="./js/setting.js"></script>
 <script src="./js/createSchedule.js"></script>
 <script src="./js/deleteSchedule.js"></script>
 <script src="./js/schedule.js"></script>
+<script src="./js/datepicker.js"></script>
+<script src="./js/getToday.js"></script>
 </html>

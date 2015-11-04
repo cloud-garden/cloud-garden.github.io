@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /* line 1, ../sass/index.scss */
 div.main-content {
   position: relative;
@@ -33,7 +32,7 @@ div.main-content div.home-temp {
 }
 /* line 27, ../sass/index.scss */
 div.main-content div.home-temp span:after {
-  content: "℃";
+  content: "c";
 }
 /* line 31, ../sass/index.scss */
 div.main-content div.home-hum {
