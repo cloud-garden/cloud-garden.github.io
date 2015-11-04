@@ -25,9 +25,16 @@ div.main-content {
   div.registrationForm{
     margin:5px;
     padding:5px;
-    border:medium solid;
+    border:solid;
+    border-width:2px;
     p{
       padding:2px;
+    }
+    img{
+      float:right;
+      width: 120px;
+      height: 80px;
+      padding-top:10px;
     }
   form {
     margin: 0 auto;
@@ -44,14 +51,33 @@ div.main-content {
 
   div.schedule-content{
       margin: 5px;
-      padding: 0;
+      padding: 0px;
     ul.tab_menu{
       list-style-type:none;
-      li{
+      padding-top:5px;
+      li.active{
         float:left;
         width:40%;
         text-align:center;
         background:#CD853F;
+        border-style:solid;
+        border-color:white;
+        border-width:1px;
+        margin: 0px;
+        padding: 2px;
+        a{
+          color:white;
+          display: block;
+          width: 100%;
+          height: 100%;
+          padding: 3px;
+        }
+        }
+      li.past{
+        float:left;
+        width:40%;
+        text-align:center;
+        background:#8C775F;
         border-style:solid;
         border-color:white;
         border-width:1px;
@@ -75,7 +101,7 @@ div.main-content {
         div.taskconts1{
           h2{
             text-align: left;
-            margin:8px;
+            margin:5px;
           }
           div.log1{
             width:88%;
@@ -93,13 +119,21 @@ div.main-content {
         div.taskconts2{
           h2{
             text-align: left;
-            margin:8px;
+            margin:5px;
           }
         }
-        div.log2{
-            width:88%;
-            height:50%;
+        div.logconts2{
+            margin:5px;
+            width:95%;
+            height:85%;
             background-color:white;
+            overflow-y:auto;
+            border:solid;
+            border-width:2px;
+            li{
+              border-bottom:solid thin;
+              padding:5px;
+            }
           }
         }
       }

@@ -33,17 +33,18 @@
 	</div>
 
 	<div id="item-name" class="item-name">
-		<h2>大根</h2>
+		<p>大根</p>
 	</div>
 	<!-- メインコンテンツ -->
 	<div id="main-content" class="main-content">
 	<!-- 登録フォーム -->
 		<div id="registrationForm" class="registrationForm">
-		<p>水やり登録フォーム</p>
+		<h2>水やり登録フォーム</h2>
+		<img class="clearfix" src="./img/recipe/water.png"></img>
 		<form>
 			<p>日付：<input type="text" id="datepicker" class="feed-date" placeholder="yyyy/xx/zz"></p>
 			<p id="date"></p>
-			<p>時間：<input type="text" placeholder="hh/mm" class="feed-time"></p>
+			<p>時間：<input type="text" placeholder="hh:mm" class="feed-time"></p>
 		</form>
 		<form>
 		<input type="checkbox" class="feed-routine clearfix">繰り返し
@@ -55,21 +56,26 @@
 
 		<div id="schedule" class="schedule-content">
 			<ul id="tab_menu" class="tab_menu clearfix">
-				<li id="active"><a href="#activeschedule">実行予定</a></li>
-				<li id="past"><a href="#pastschedule">実行内容</a></li>
+				<li id="active"class="active"><a href="#activeschedule">登録リスト</a></li>
+				<li id="past" class="past"><a href="#pastschedule">実行リスト</a></li>
 			</ul>
 			<div id="activeschedule" class="page1">
 				<div id="taskconts1" class="taskconts1">
-				<h2>水やり実行予定</h2>
+				<h2>水やりする日時</h2>
 				</div>
-				<div id="logconts1" class="logconts1"></div>
+				<div id="logconts1" class="logconts1">
+					<ul>
+					<a href="#" id="delete-schedule">DELETE</a>
+					</ul>
+				</div>
 			</div>
 			<div id="pastschedule" class="page2">
 				<div id="taskconts2" class="taskconts2">
-				<h2>実行した水やり</h2>
+				<h2>水やりした日時</h2>
 				</div>
 				<div id="logconts2" class="logconts2">
-					<a href="#" id="delete-schedule">DELETE</a>
+					<ul>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -97,4 +103,5 @@
 <script src="./js/schedule.js"></script>
 <script src="./js/datepicker.js"></script>
 <script src="./js/getToday.js"></script>
+<script src="./js/getPastScheduleList.js"></script>
 </html>
