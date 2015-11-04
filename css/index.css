@@ -107,3 +107,38 @@ div.character-content div.character-img {
   background-position: bottom center;
   background-repeat: no-repeat;
 }
+=======
+/* line 1, ../sass/index.scss */
+div.character-content {
+  position: absolute;
+  bottom: 55px;
+  width: 100%;
+  height: 100px;
+  z-index: 20;
+}
+/* line 7, ../sass/index.scss */
+div.character-content div.character-comment {
+  float: left;
+  width: 75%;
+}
+/* line 10, ../sass/index.scss */
+div.character-content div.character-comment p {
+  margin: 20px 10px;
+  padding: 15px 20px;
+  height: 40px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.6);
+}
+/* line 20, ../sass/index.scss */
+div.character-content div.character-img {
+  float: right;
+  width: 22%;
+  height: 100px;
+  margin: 0 3% 0 0;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+>>>>>>> 04dc60c31b0c29a73cf31e556d5b94c90c9ba25d
