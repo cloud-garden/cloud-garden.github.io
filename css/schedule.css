@@ -113,8 +113,8 @@ div.main-content div.schedule-content ul.tab_menu li.past a {
 div.main-content div.schedule-content div.page1 {
   display: block;
   position: absolute;
-  width: 98%;
-  height: 60%;
+  width: 95%;
+  height: 50%;
   background-color: #FDF5E6;
 }
 /* line 103, ../sass/schedule.scss */
@@ -123,35 +123,39 @@ div.main-content div.schedule-content div.page1 div.taskconts1 h2 {
   margin: 5px;
 }
 /* line 107, ../sass/schedule.scss */
-div.main-content div.schedule-content div.page1 div.taskconts1 div.log1 {
-  width: 88%;
-  height: 50%;
-  background-color: white;
-}
-/* line 114, ../sass/schedule.scss */
-div.main-content div.schedule-content div.page2 {
-  display: none;
-  position: absolute;
-  width: 98%;
-  height: 60%;
-  background-color: #FDF5E6;
-}
-/* line 121, ../sass/schedule.scss */
-div.main-content div.schedule-content div.page2 div.taskconts2 h2 {
-  text-align: left;
-  margin: 5px;
-}
-/* line 126, ../sass/schedule.scss */
-div.main-content div.schedule-content div.page2 div.logconts2 {
+div.main-content div.schedule-content div.page1 div.taskconts1 div.logconts1 {
   margin: 5px;
   width: 95%;
-  height: 85%;
+  height: 75%;
   background-color: white;
   overflow-y: auto;
   border: solid;
   border-width: 2px;
 }
-/* line 134, ../sass/schedule.scss */
+/* line 118, ../sass/schedule.scss */
+div.main-content div.schedule-content div.page2 {
+  display: none;
+  position: absolute;
+  width: 95%;
+  height: 50%;
+  background-color: #FDF5E6;
+}
+/* line 125, ../sass/schedule.scss */
+div.main-content div.schedule-content div.page2 div.taskconts2 h2 {
+  text-align: left;
+  margin: 5px;
+}
+/* line 130, ../sass/schedule.scss */
+div.main-content div.schedule-content div.page2 div.logconts2 {
+  margin: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: white;
+  overflow-y: auto;
+  border: solid;
+  border-width: 2px;
+}
+/* line 138, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 div.logconts2 li {
   border-bottom: solid thin;
   padding: 5px;
