@@ -4,7 +4,7 @@ var wh = $(window).height();
 $(function(){
     checkIsMobile();
     if(isMobile) {
-        $("#main-content").css({"background-image": "url(img/home/dummy.jpg)"});
+        $("#photo-view").css({"background-image": "url(img/home/dummy.jpg)"});
     }
 
     function checkIsMobile() {

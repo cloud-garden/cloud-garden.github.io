@@ -6,9 +6,24 @@ $(function(){
 		$("#date").text((date.getFullYear())+"年"+(date.getMonth()+1)+"月"+(date.getDate())+"日");
 		$("#temperature").text(json.temp);
 		$("#humidity").text(json.humid);
+		$("#photo-view input").val(json.date);
+		loadTodaySchedule(json.date);
 		updateCharacter(json.temp, json.humid);
 	});
 });
+
+
+function loadTodaySchedule(millisec) {
+	console.log("loadTodaySchedule(getCurrentState)");
+	var sendData = {user:"keita", date:millisec};
+	$.getJSON("http://54.199.139.148/cloud_garden_server/api/getScheduleList", sendData, function(json) {
+		console.log(json);
+		$.each(json.schedule, function(index, item) {
+			var date = new Date(parseInt(item.date));
+			$("#log-content ul").append("<li>" + (date.getFullYear()) + "年"+(date.getMonth()+1)+"月"+(date.getDate())+"日 "+(date.getHours())+":"+(("0"+date.getMinutes()).slice(-2))+"</li>");
+		});
+	});
+}
 
 function updateCharacter(temp, hum) {
 
@@ -19,7 +34,6 @@ function updateCharacter(temp, hum) {
 		$("#temperature").text(Math.floor(temp));
 		$("#humidity").text(Math.floor(hum));		
 	}
-
 
 	var message = Math.random() > 0.5 ? "今日はいい天気！<br>気持ちいいっちゃ！" : "今日も頑張ろっちゃ！";
 	var imgURL = "default";
