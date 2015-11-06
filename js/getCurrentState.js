@@ -32,7 +32,7 @@ function updateCharacter(temp, hum) {
 		temp = 40*Math.random();
 		hum = 60*Math.random();
 		$("#temperature").text(Math.floor(temp));
-		$("#humidity").text(Math.floor(hum));		
+		$("#humidity").text(Math.floor(hum));
 	}
 
 	var message = Math.random() > 0.5 ? "今日はいい天気！<br>気持ちいいっちゃ！" : "今日も頑張ろっちゃ！";
@@ -49,16 +49,16 @@ function updateCharacter(temp, hum) {
 		imgURL = "angry";
 	}
 	$("#character-comment p").html(message);
-  $("#character-img").css({"background-image": "url(img/home/character-"+imgURL+".png)"});
+  $("#character-img").css({"background-image": "url(img/character/character-"+imgURL+".png)"});
 }
 
-function getQuerystring(key, default_)  {  
-   if (default_==null) default_="";  
-   key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");  
-   var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");  
-   var qs = regex.exec(window.location.href);  
-   if(qs == null)  
-    return default_;  
-   else  
-    return qs[1];  
-}  
+function getQuerystring(key, default_)  {
+   if (default_==null) default_="";
+   key = key.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+   var regex = new RegExp("[\\?&]"+key+"=([^&#]*)");
+   var qs = regex.exec(window.location.href);
+   if(qs == null)
+    return default_;
+   else
+    return qs[1];
+}
