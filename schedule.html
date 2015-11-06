@@ -42,7 +42,7 @@
 		<h2>水やり登録フォーム</h2>
 		<img class="clearfix" src="./img/recipe/water.png"></img>
 		<form>
-			<p>日付：<input type="text" id="datepicker" class="feed-date" placeholder="yyyy/xx/zz"></p>
+			<p>月日：<input type="text" id="datepicker" class="feed-date" placeholder="yyyy/xx/zz"></p>
 			<p id="date"></p>
 			<p>時間：<input type="text" placeholder="hh:mm" class="feed-time"></p>
 		</form>
@@ -61,17 +61,16 @@
 			</ul>
 			<div id="activeschedule" class="page1">
 				<div id="taskconts1" class="taskconts1">
-				<h2>水やりする日時</h2>
-				</div>
-				<div id="logconts1" class="logconts1">
-					<ul>
-					<a href="#" id="delete-schedule">DELETE</a>
-					</ul>
+				<h2>登録した日時</h2>
+					<div id="logconts1" class="logconts1">
+						<ul>
+						</ul>
+					</div>
 				</div>
 			</div>
 			<div id="pastschedule" class="page2">
 				<div id="taskconts2" class="taskconts2">
-				<h2>水やりした日時</h2>
+				<h2>実行した日時</h2>
 				</div>
 				<div id="logconts2" class="logconts2">
 					<ul>
@@ -99,9 +98,10 @@
 <script src="./js/actionbar.js"></script>
 <script src="./js/setting.js"></script>
 <script src="./js/createSchedule.js"></script>
-<script src="./js/deleteSchedule.js"></script>
+<!--<script src="./js/deleteSchedule.js"></script>-->
 <script src="./js/schedule.js"></script>
 <script src="./js/datepicker.js"></script>
 <script src="./js/getToday.js"></script>
 <script src="./js/getPastScheduleList.js"></script>
+<script src="./js/getActiveScheduleList.js"></script>
 </html>

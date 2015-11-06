@@ -34,42 +34,43 @@ div.main-content div.registrationForm {
   padding: 5px;
   border: solid;
   border-width: 2px;
+  border-radius: 8px;
 }
-/* line 31, ../sass/schedule.scss */
+/* line 32, ../sass/schedule.scss */
 div.main-content div.registrationForm p {
   padding: 2px;
 }
-/* line 34, ../sass/schedule.scss */
+/* line 35, ../sass/schedule.scss */
 div.main-content div.registrationForm img {
   float: right;
   width: 120px;
   height: 80px;
   padding-top: 10px;
 }
-/* line 40, ../sass/schedule.scss */
+/* line 41, ../sass/schedule.scss */
 div.main-content div.registrationForm form {
   margin: 0 auto;
   padding: 5px;
 }
-/* line 43, ../sass/schedule.scss */
+/* line 44, ../sass/schedule.scss */
 div.main-content div.registrationForm form input.feed-date {
   width: 30%;
 }
-/* line 46, ../sass/schedule.scss */
+/* line 47, ../sass/schedule.scss */
 div.main-content div.registrationForm form input.feed-time {
   width: 30%;
 }
-/* line 53, ../sass/schedule.scss */
+/* line 54, ../sass/schedule.scss */
 div.main-content div.schedule-content {
   margin: 5px;
   padding: 0px;
 }
-/* line 56, ../sass/schedule.scss */
+/* line 57, ../sass/schedule.scss */
 div.main-content div.schedule-content ul.tab_menu {
   list-style-type: none;
   padding-top: 5px;
 }
-/* line 59, ../sass/schedule.scss */
+/* line 60, ../sass/schedule.scss */
 div.main-content div.schedule-content ul.tab_menu li.active {
   float: left;
   width: 40%;
@@ -78,10 +79,11 @@ div.main-content div.schedule-content ul.tab_menu li.active {
   border-style: solid;
   border-color: white;
   border-width: 1px;
+  border-radius: 10px 10px 0px 0px;
   margin: 0px;
   padding: 2px;
 }
-/* line 69, ../sass/schedule.scss */
+/* line 71, ../sass/schedule.scss */
 div.main-content div.schedule-content ul.tab_menu li.active a {
   color: white;
   display: block;
@@ -89,7 +91,7 @@ div.main-content div.schedule-content ul.tab_menu li.active a {
   height: 100%;
   padding: 3px;
 }
-/* line 77, ../sass/schedule.scss */
+/* line 79, ../sass/schedule.scss */
 div.main-content div.schedule-content ul.tab_menu li.past {
   float: left;
   width: 40%;
@@ -98,10 +100,11 @@ div.main-content div.schedule-content ul.tab_menu li.past {
   border-style: solid;
   border-color: white;
   border-width: 1px;
+  border-radius: 10px 10px 0px 0px;
   margin: 0px;
   padding: 2px;
 }
-/* line 87, ../sass/schedule.scss */
+/* line 90, ../sass/schedule.scss */
 div.main-content div.schedule-content ul.tab_menu li.past a {
   color: white;
   display: block;
@@ -109,20 +112,21 @@ div.main-content div.schedule-content ul.tab_menu li.past a {
   height: 100%;
   padding: 3px;
 }
-/* line 96, ../sass/schedule.scss */
+/* line 99, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page1 {
   display: block;
+  border-radius: 10px;
   position: absolute;
-  width: 95%;
+  width: 97%;
   height: 50%;
   background-color: #FDF5E6;
 }
-/* line 103, ../sass/schedule.scss */
+/* line 107, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page1 div.taskconts1 h2 {
   text-align: left;
   margin: 5px;
 }
-/* line 107, ../sass/schedule.scss */
+/* line 111, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page1 div.taskconts1 div.logconts1 {
   margin: 5px;
   width: 95%;
@@ -131,21 +135,32 @@ div.main-content div.schedule-content div.page1 div.taskconts1 div.logconts1 {
   overflow-y: auto;
   border: solid;
   border-width: 2px;
+  border-radius: 5px;
 }
-/* line 118, ../sass/schedule.scss */
+/* line 120, ../sass/schedule.scss */
+div.main-content div.schedule-content div.page1 div.taskconts1 div.logconts1 li {
+  border-bottom: solid thin;
+  padding: 5px;
+}
+/* line 123, ../sass/schedule.scss */
+div.main-content div.schedule-content div.page1 div.taskconts1 div.logconts1 li a {
+  float: right;
+}
+/* line 130, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 {
   display: none;
+  border-radius: 10px;
   position: absolute;
-  width: 95%;
+  width: 97%;
   height: 50%;
   background-color: #FDF5E6;
 }
-/* line 125, ../sass/schedule.scss */
+/* line 138, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 div.taskconts2 h2 {
   text-align: left;
   margin: 5px;
 }
-/* line 130, ../sass/schedule.scss */
+/* line 143, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 div.logconts2 {
   margin: 5px;
   width: 95%;
@@ -154,8 +169,9 @@ div.main-content div.schedule-content div.page2 div.logconts2 {
   overflow-y: auto;
   border: solid;
   border-width: 2px;
+  border-radius: 5px;
 }
-/* line 138, ../sass/schedule.scss */
+/* line 152, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 div.logconts2 li {
   border-bottom: solid thin;
   padding: 5px;

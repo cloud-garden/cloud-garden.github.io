@@ -28,6 +28,7 @@ div.main-content {
     padding:5px;
     border:solid;
     border-width:2px;
+    border-radius: 8px;
     p{
       padding:2px;
     }
@@ -64,6 +65,7 @@ div.main-content {
         border-style:solid;
         border-color:white;
         border-width:1px;
+        border-radius:10px 10px 0px 0px;
         margin: 0px;
         padding: 2px;
         a{
@@ -82,6 +84,7 @@ div.main-content {
         border-style:solid;
         border-color:white;
         border-width:1px;
+        border-radius:10px 10px 0px 0px;
         margin: 0px;
         padding: 2px;
         a{
@@ -95,8 +98,9 @@ div.main-content {
       }
       div.page1{
         display: block;
+        border-radius: 10px;
         position:absolute;
-        width:95%;
+        width:97%;
         height:50%;
         background-color:#FDF5E6;
         div.taskconts1{
@@ -109,16 +113,25 @@ div.main-content {
             width:95%;
             height:75%;
             background-color:white;
-            overflow-y:auto;
+            overflow-y: auto;
             border:solid;
             border-width:2px;
+            border-radius: 5px;
+              li{
+                border-bottom:solid thin;
+                padding:5px;
+                a{
+                  float:right;
+                }
+              }
+            }
           }
-        }
         }
       div.page2{
         display: none;
+        border-radius: 10px;
         position:absolute;
-        width:95%;
+        width:97%;
         height:50%;
         background-color:#FDF5E6;
         div.taskconts2{
@@ -135,6 +148,7 @@ div.main-content {
             overflow-y:auto;
             border:solid;
             border-width:2px;
+            border-radius: 5px;
             li{
               border-bottom:solid thin;
               padding:5px;
