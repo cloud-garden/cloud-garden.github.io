@@ -44,10 +44,10 @@
 		<form>
 			<p>月日：<input type="text" id="datepicker" class="feed-date" placeholder="yyyy/xx/zz"></p>
 			<p id="date"></p>
-			<p>時間：<input type="text" placeholder="hh:mm" class="feed-time"></p>
+			<p>時間：<input type="text" placeholder="hh:mm" id="feed-time" class="feed-time"></p>
 		</form>
 		<form>
-		<input type="checkbox" class="feed-routine clearfix">繰り返し
+		<input type="checkbox" id="feed-routine" class="feed-routine clearfix">繰り返し
 		<a href="#" id="create-schedule">登録</a>
 		</form>
 		</div>
@@ -63,7 +63,7 @@
 				<div id="taskconts1" class="taskconts1">
 				<h2>登録した日時</h2>
 					<div id="logconts1" class="logconts1">
-						<ul>
+						<ul id="list">
 						</ul>
 					</div>
 				</div>
