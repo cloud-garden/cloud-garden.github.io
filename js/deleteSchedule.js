@@ -1,11 +1,11 @@
 $(function() {
-  $("#delete-schedule").click(function(){
-    var scheduleId = "56273577328334ca2e829de6";
-
+$("body ul").on("click","a",function(){
+	var scheduleId = $(this).attr('id');
   	var sendData = {id:scheduleId};
-  	$.getJSON("http://54.199.139.148/cloud_garden_server/api/deleteSchedule", sendData, function(json){
-			console.log(json);
+  	console.log(sendData);
+ /*	$.getJSON("http://54.199.139.148/cloud_garden_server/api/deleteSchedule", sendData, function(json){
+			alert("削除しました");
 		});
-    return false;
-  });
+    return false;*/
+});
 });

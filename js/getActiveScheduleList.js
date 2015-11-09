@@ -28,18 +28,18 @@ function createHtml(json, zIndex) {
 }
 
 function activeScheduleList(millisec) {
-	var sendData = {
-		user : "keita"
-	};
+	var sendData = {user : "keita"};
 	$.getJSON("http://54.199.139.148/cloud_garden_server/api/getActiveScheduleList", sendData, function(json) {
-		 //console.log(json);
+
 		$.each(json.schedule, function(index, item) {
 			// var date = item.date;
 			//console.log(index + " : "+ item);
 			var date = new Date(parseInt(item.date));
-			$("#logconts1 ul").append("<li>" + (date.getFullYear()) + "年" + (date.getMonth() + 1) + "月" + (date.getDate()) + "日 " + (date.getHours()) + ":" + (date.getMinutes()) + '<a href="#" id="delete-schedule">削除</a>' + "</li>");
-			// <a href="#" id="delete-schedule">DELETE</a>
-			// $("#log-content-"+millisec).append("")
+			var Month = date.getMonth() + 1;
+			//console.log(index);
+			$("#logconts1 ul").append($("<li/>").text(date.getFullYear() + "年" + Month + "月" + date.getDate() + "日 " + date.getHours() + ":" + date.getMinutes())
+			.append($("<a/>").attr({"href":"#","id":item.id}).text("削除")
+		));
 		});
 	});
 }
