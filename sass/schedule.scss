@@ -157,3 +157,43 @@ div.main-content {
         }
       }
     }
+
+div.dialog1{
+  display : none;
+  p{
+    height:100px;
+    vertical-align:middle;
+    float:left;
+    width:60%;
+  }
+  img{
+    float:right;
+    width:40%
+  }
+}
+div.dialog2{
+  display : none;
+  p{
+    float:left;
+    width:60%;
+  }
+  img{
+    float:right;
+    width:40%
+  }
+
+}
+div.dialog3{
+  display : none;
+  p{
+    line-height:100px;
+    vertical-align:middle;
+    float:left;
+    width:60%;
+  }
+  img{
+    float:right;
+    width:40%
+  }
+
+}

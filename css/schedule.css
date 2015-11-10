@@ -176,3 +176,52 @@ div.main-content div.schedule-content div.page2 div.logconts2 li {
   border-bottom: solid thin;
   padding: 5px;
 }
+
+/* line 161, ../sass/schedule.scss */
+div.dialog1 {
+  display: none;
+}
+/* line 163, ../sass/schedule.scss */
+div.dialog1 p {
+  height: 100px;
+  vertical-align: middle;
+  float: left;
+  width: 60%;
+}
+/* line 169, ../sass/schedule.scss */
+div.dialog1 img {
+  float: right;
+  width: 40%;
+}
+
+/* line 174, ../sass/schedule.scss */
+div.dialog2 {
+  display: none;
+}
+/* line 176, ../sass/schedule.scss */
+div.dialog2 p {
+  float: left;
+  width: 60%;
+}
+/* line 180, ../sass/schedule.scss */
+div.dialog2 img {
+  float: right;
+  width: 40%;
+}
+
+/* line 186, ../sass/schedule.scss */
+div.dialog3 {
+  display: none;
+}
+/* line 188, ../sass/schedule.scss */
+div.dialog3 p {
+  line-height: 100px;
+  vertical-align: middle;
+  float: left;
+  width: 60%;
+}
+/* line 194, ../sass/schedule.scss */
+div.dialog3 img {
+  float: right;
+  width: 40%;
+}

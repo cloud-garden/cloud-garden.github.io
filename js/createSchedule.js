@@ -1,4 +1,27 @@
 $(function() {
+	var d = $('#dialog1');
+	d.dialog({
+		autoOpen: false,
+		modal: true,
+		buttons:{
+			'戻る' : function(){
+				$(this).dialog('close');
+				window.location.reload(true);
+			}
+		}
+	});
+
+	var e = $('#dialog2');
+	e.dialog({
+		modal: true,
+		autoOpen: false,
+		buttons:{
+			'戻る' : function(){
+		$(this).dialog('close');
+			}
+		}
+	});
+
   $("#create-schedule").click(function(){
   	var dateStr = $("#datepicker").val();
   	var timeStr = $("#feed-time").val();
@@ -12,12 +35,11 @@ $(function() {
   	var now = new Date();
   	if(date > now.getTime()){
  	$.getJSON("http://54.199.139.148/cloud_garden_server/api/createSchedule", sendData, function(json){
-			window.location.reload(true);
-			alert("登録完了しました");
+			d.dialog('open');
 		});
     return false;
     }else{
-    	alert("日付が過去です");
+    	e.dialog('open');
     }
   });
 });
