@@ -50,6 +50,7 @@ function updatePhotoBox(json) {
 }
 
 function loadSchedule(millisec) {
+	$("#log-content ul").text("");
 	var sendData = {user:"keita", date:millisec};
 	$.getJSON("http://54.199.139.148/cloud_garden_server/api/getScheduleList", sendData, function(json) {
 		$.each(json.schedule, function(index, item) {

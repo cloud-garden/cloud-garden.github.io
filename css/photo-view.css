@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* line 1, ../sass/photo-view.scss */
 div.main-content {
   position: relative;
@@ -9,7 +10,7 @@ div.main-content div.float-status {
   position: absolute;
   top: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
   box-shadow: 0 2px 2px 0px rgba(0, 0, 0, 0.6);
   font-size: 1.5em;
   padding: 25% 0;
@@ -29,7 +30,7 @@ div.main-content div.home-temp {
 }
 /* line 24, ../sass/photo-view.scss */
 div.main-content div.home-temp span:after {
-  content: "c";
+  content: "度";
 }
 /* line 28, ../sass/photo-view.scss */
 div.main-content div.home-hum {
