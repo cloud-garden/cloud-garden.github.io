@@ -1,0 +1,137 @@
+/* line 1, ../sass/about.scss */
+div.maincontent {
+  display: block;
+  width: 95%;
+  margin: auto;
+  border-bottom: solid thin;
+}
+/* line 6, ../sass/about.scss */
+div.maincontent div.creditTitle {
+  display: block;
+  width: 95%;
+  height: 20px;
+  margin: 5px auto;
+  padding: 10px;
+  border-bottom: solid thin;
+  border-radius: 10px 10px 0px 0px;
+  background-color: #faf0e6;
+}
+/* line 15, ../sass/about.scss */
+div.maincontent div.creditTitle p {
+  text-align: center;
+  line-height: 20px;
+  font-weight: 500;
+  z-index: 1;
+}
+/* line 21, ../sass/about.scss */
+div.maincontent div.creditTitle img {
+  position: absolute;
+  clip: rect(55px 200px 90px 10px);
+  top: 3px;
+  right: -20px;
+  opacity: 0.15;
+}
+/* line 30, ../sass/about.scss */
+div.maincontent div.client {
+  display: block;
+  width: 95%;
+  height: 20%;
+  margin: 10px auto 5px;
+}
+/* line 35, ../sass/about.scss */
+div.maincontent div.client p {
+  text-align: center;
+  line-height: 20px;
+  padding: 5px;
+}
+/* line 41, ../sass/about.scss */
+div.maincontent div.clientName {
+  display: block;
+  width: 95%;
+  height: 20%;
+  margin: 5px auto;
+}
+/* line 46, ../sass/about.scss */
+div.maincontent div.clientName p {
+  text-align: center;
+  line-height: 20px;
+  padding: 2px;
+}
+/* line 53, ../sass/about.scss */
+div.maincontent div.server {
+  display: block;
+  width: 95%;
+  height: 20%;
+  margin: 10px auto 5px;
+}
+/* line 58, ../sass/about.scss */
+div.maincontent div.server p {
+  text-align: center;
+  line-height: 20px;
+  padding: 5px;
+}
+/* line 64, ../sass/about.scss */
+div.maincontent div.serverName {
+  display: block;
+  width: 95%;
+  height: 20%;
+  margin: 5px auto;
+}
+/* line 69, ../sass/about.scss */
+div.maincontent div.serverName p {
+  text-align: center;
+  line-height: 20px;
+  padding: 2px;
+}
+/* line 77, ../sass/about.scss */
+div.maincontent div.hard {
+  display: block;
+  width: 95%;
+  height: 20%;
+  margin: 10px auto 5px;
+}
+/* line 82, ../sass/about.scss */
+div.maincontent div.hard p {
+  text-align: center;
+  line-height: 20px;
+  padding: 5px;
+}
+/* line 88, ../sass/about.scss */
+div.maincontent div.hardName {
+  display: block;
+  width: 95%;
+  height: 20%;
+  margin: 5px auto;
+}
+/* line 93, ../sass/about.scss */
+div.maincontent div.hardName p {
+  text-align: center;
+  line-height: 20px;
+  padding: 2px;
+}
+/* line 100, ../sass/about.scss */
+div.maincontent div.thanks {
+  display: block;
+  width: 95%;
+  height: 20%;
+  margin: 10px auto 5px;
+}
+/* line 105, ../sass/about.scss */
+div.maincontent div.thanks p {
+  text-align: center;
+  line-height: 20px;
+  padding: 5px;
+}
+/* line 111, ../sass/about.scss */
+div.maincontent div.thanksName {
+  display: block;
+  width: 95%;
+  height: 20%;
+  margin: 5px auto 10px;
+}
+/* line 116, ../sass/about.scss */
+div.maincontent div.thanksName p {
+  text-align: center;
+  line-height: 20px;
+  padding: 2px;
+}
