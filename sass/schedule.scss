@@ -44,6 +44,13 @@ div.main-content {
     input.feed-date{
       width: 30%;
     }
+    img.ui-datepicker-trigger{
+        position:absolute;
+        top:20px;
+        vertical-align: top;
+        width:30px;
+        height:30px;
+      }
     input.feed-time{
       width: 30%;
     }
@@ -98,7 +105,7 @@ div.main-content {
       }
       div.page1{
         display: block;
-        border-radius: 10px;
+        border-radius:0px 10px 10px 10px;
         position:absolute;
         width:97%;
         height:50%;
@@ -108,24 +115,25 @@ div.main-content {
             text-align: left;
             margin:5px;
           }
+        }
           div.logconts1{
             margin:5px;
             width:95%;
-            height:75%;
+            height:170px;
             background-color:white;
             overflow-y:auto;
             border:solid;
             border-width:2px;
             border-radius: 5px;
               li{
-                border-bottom:solid thin;
+                border-bottom:solid 1px;
                 padding:5px;
                 a{
                   float:right;
+                  padding-right:10px;
                 }
               }
            }
-          }
         }
       div.page2{
         display: none;
@@ -143,7 +151,7 @@ div.main-content {
         div.logconts2{
             margin:5px;
             width:95%;
-            height:75%;
+            height:170px;
             background-color:white;
             overflow-y:auto;
             border:solid;
@@ -158,10 +166,11 @@ div.main-content {
       }
     }
 
+
 div.dialog1{
   display : none;
   p{
-    height:100px;
+    line-height:100px;
     vertical-align:middle;
     float:left;
     width:60%;
@@ -174,6 +183,8 @@ div.dialog1{
 div.dialog2{
   display : none;
   p{
+    line-height:100px;
+    vertical-align:middle;
     float:left;
     width:60%;
   }
