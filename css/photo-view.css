@@ -91,7 +91,3 @@ div.main-content div.photo-view-box {
   width: 100%;
   height: 100%;
 }
-/* line 79, ../sass/photo-view.scss */
-div.main-content div.photo-view-box div#photo-view-1, div.main-content div.photo-view-box div#photo-view-2, div.main-content div.photo-view-box div#photo-view-3, div.main-content div.photo-view-box div#photo-view-4 {
-  visibility: hidden;
-}
