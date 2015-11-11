@@ -1,8 +1,8 @@
 $(function() {
 	var d = $('#dialog1');
 	d.dialog({
-		autoOpen: false,
 		modal: true,
+		autoOpen: false,
 		buttons:{
 			'戻る' : function(){
 				$(this).dialog('close');
