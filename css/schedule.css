@@ -138,7 +138,7 @@ div.main-content div.schedule-content div.page1 div.taskconts1 h2 {
 div.main-content div.schedule-content div.page1 div.logconts1 {
   margin: 5px;
   width: 95%;
-  height: 190px;
+  height: 180px;
   background-color: white;
   overflow-y: auto;
   border: solid;
@@ -173,65 +173,65 @@ div.main-content div.schedule-content div.page2 div.taskconts2 h2 {
 div.main-content div.schedule-content div.page2 div.logconts2 {
   margin: 5px;
   width: 95%;
-  height: 190px;
+  height: 18 0px;
   background-color: white;
   overflow-y: auto;
   border: solid;
   border-width: 2px;
   border-radius: 5px;
 }
-/* line 160, ../sass/schedule.scss */
+/* line 161, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 div.logconts2 li {
   border-bottom: solid thin;
   padding: 5px;
 }
 
-/* line 170, ../sass/schedule.scss */
+/* line 171, ../sass/schedule.scss */
 div.dialog1 {
   display: none;
 }
-/* line 172, ../sass/schedule.scss */
+/* line 173, ../sass/schedule.scss */
 div.dialog1 p {
   line-height: 100px;
   vertical-align: middle;
   float: left;
   width: 60%;
 }
-/* line 178, ../sass/schedule.scss */
+/* line 179, ../sass/schedule.scss */
 div.dialog1 img {
   float: right;
   width: 40%;
 }
 
-/* line 183, ../sass/schedule.scss */
+/* line 184, ../sass/schedule.scss */
 div.dialog2 {
   display: none;
 }
-/* line 185, ../sass/schedule.scss */
+/* line 186, ../sass/schedule.scss */
 div.dialog2 p {
   line-height: 100px;
   vertical-align: middle;
   float: left;
   width: 60%;
 }
-/* line 191, ../sass/schedule.scss */
+/* line 192, ../sass/schedule.scss */
 div.dialog2 img {
   float: right;
   width: 40%;
 }
 
-/* line 197, ../sass/schedule.scss */
+/* line 198, ../sass/schedule.scss */
 div.dialog3 {
   display: none;
 }
-/* line 199, ../sass/schedule.scss */
+/* line 200, ../sass/schedule.scss */
 div.dialog3 p {
   line-height: 100px;
   vertical-align: middle;
   float: left;
   width: 60%;
 }
-/* line 205, ../sass/schedule.scss */
+/* line 206, ../sass/schedule.scss */
 div.dialog3 img {
   float: right;
   width: 40%;

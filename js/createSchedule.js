@@ -29,7 +29,7 @@ $(function() {
 	//console.log(dateStr);
 	//console.log(timeStr);
 	//console.log(routine);
-	//var date = new Date(dateStr+"T"+timeStr+":00+0900");
+	// var date = new Date(dateStr+"T"+timeStr+":00+0900");
   	var date = Date.parse(dateStr+" "+timeStr+":00");
   	var sendData = {date:date, user:"keita", isRoutine:routine};
   	var now = new Date();
