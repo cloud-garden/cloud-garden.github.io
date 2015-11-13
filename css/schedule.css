@@ -138,24 +138,25 @@ div.main-content div.schedule-content div.page1 div.taskconts1 h2 {
 div.main-content div.schedule-content div.page1 div.logconts1 {
   margin: 5px;
   width: 95%;
-  height: 170px;
+  height: 90%;
+  max-height: 170px;
   background-color: white;
   overflow-y: auto;
   border: solid;
   border-width: 2px;
   border-radius: 5px;
 }
-/* line 128, ../sass/schedule.scss */
+/* line 129, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page1 div.logconts1 li {
   border-bottom: solid 1px;
   padding: 5px;
 }
-/* line 131, ../sass/schedule.scss */
+/* line 132, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page1 div.logconts1 li a {
   float: right;
   padding-right: 10px;
 }
-/* line 138, ../sass/schedule.scss */
+/* line 139, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 {
   display: none;
   border-radius: 10px;
@@ -164,74 +165,75 @@ div.main-content div.schedule-content div.page2 {
   height: 50%;
   background-color: #FDF5E6;
 }
-/* line 146, ../sass/schedule.scss */
+/* line 147, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 div.taskconts2 h2 {
   text-align: left;
   margin: 5px;
 }
-/* line 151, ../sass/schedule.scss */
+/* line 152, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 div.logconts2 {
   margin: 5px;
   width: 95%;
-  height: 170px;
+  height: 90%;
+  max-height: 170px;
   background-color: white;
   overflow-y: auto;
   border: solid;
   border-width: 2px;
   border-radius: 5px;
 }
-/* line 160, ../sass/schedule.scss */
+/* line 162, ../sass/schedule.scss */
 div.main-content div.schedule-content div.page2 div.logconts2 li {
   border-bottom: solid thin;
   padding: 5px;
 }
 
-/* line 170, ../sass/schedule.scss */
+/* line 172, ../sass/schedule.scss */
 div.dialog1 {
   display: none;
 }
-/* line 172, ../sass/schedule.scss */
+/* line 174, ../sass/schedule.scss */
 div.dialog1 p {
   line-height: 100px;
   vertical-align: middle;
   float: left;
   width: 60%;
 }
-/* line 178, ../sass/schedule.scss */
+/* line 180, ../sass/schedule.scss */
 div.dialog1 img {
   float: right;
   width: 40%;
 }
 
-/* line 183, ../sass/schedule.scss */
+/* line 185, ../sass/schedule.scss */
 div.dialog2 {
   display: none;
 }
-/* line 185, ../sass/schedule.scss */
+/* line 187, ../sass/schedule.scss */
 div.dialog2 p {
   line-height: 100px;
   vertical-align: middle;
   float: left;
   width: 60%;
 }
-/* line 191, ../sass/schedule.scss */
+/* line 193, ../sass/schedule.scss */
 div.dialog2 img {
   float: right;
   width: 40%;
 }
 
-/* line 197, ../sass/schedule.scss */
+/* line 199, ../sass/schedule.scss */
 div.dialog3 {
   display: none;
 }
-/* line 199, ../sass/schedule.scss */
+/* line 201, ../sass/schedule.scss */
 div.dialog3 p {
   line-height: 100px;
   vertical-align: middle;
   float: left;
   width: 60%;
 }
-/* line 205, ../sass/schedule.scss */
+/* line 207, ../sass/schedule.scss */
 div.dialog3 img {
   float: right;
   width: 40%;
