@@ -41,7 +41,7 @@ div.maincontent div.listcontent div.client {
   display: block;
   width: 95%;
   height: 20%;
-  margin: 10px auto 5px;
+  margin: 8px auto 5px;
 }
 /* line 37, ../sass/about.scss */
 div.maincontent div.listcontent div.client p {
@@ -67,7 +67,7 @@ div.maincontent div.listcontent div.server {
   display: block;
   width: 95%;
   height: 20%;
-  margin: 10px auto 5px;
+  margin: 8px auto 5px;
 }
 /* line 60, ../sass/about.scss */
 div.maincontent div.listcontent div.server p {
@@ -93,7 +93,7 @@ div.maincontent div.listcontent div.hard {
   display: block;
   width: 95%;
   height: 20%;
-  margin: 10px auto 5px;
+  margin: 8px auto 5px;
 }
 /* line 84, ../sass/about.scss */
 div.maincontent div.listcontent div.hard p {
@@ -119,7 +119,7 @@ div.maincontent div.listcontent div.thanks {
   display: block;
   width: 95%;
   height: 20%;
-  margin: 10px auto 5px;
+  margin: 8px auto 5px;
 }
 /* line 107, ../sass/about.scss */
 div.maincontent div.listcontent div.thanks p {
