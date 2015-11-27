@@ -4,9 +4,8 @@ div.maincontent {
   width: 95%;
   margin: auto;
   border-bottom: solid thin;
-  overflow-y: auto;
 }
-/* line 7, ../sass/about.scss */
+/* line 6, ../sass/about.scss */
 div.maincontent div.creditTitle {
   display: block;
   width: 95%;
@@ -16,6 +15,7 @@ div.maincontent div.creditTitle {
   border-bottom: solid thin;
   border-radius: 10px 10px 0px 0px;
   background-color: #faf0e6;
+  overflow-y: auto;
 }
 /* line 16, ../sass/about.scss */
 div.maincontent div.creditTitle p {

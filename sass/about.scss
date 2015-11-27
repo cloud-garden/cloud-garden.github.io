@@ -3,7 +3,6 @@ div.maincontent{
       width:95%;
       margin:auto;
       border-bottom:solid thin;
-      overflow-y:auto;
   div.creditTitle{
       display:block;
       width:95%;
@@ -13,6 +12,7 @@ div.maincontent{
       border-bottom:solid thin;
       border-radius:10px 10px 0px 0px;
       background-color:#faf0e6;
+      overflow-y:auto;
       p{
         text-align:center;
         line-height:20px;
