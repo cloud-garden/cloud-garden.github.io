@@ -15,16 +15,15 @@ div.maincontent div.creditTitle {
   border-bottom: solid thin;
   border-radius: 10px 10px 0px 0px;
   background-color: #faf0e6;
-  overflow-y: auto;
 }
-/* line 16, ../sass/about.scss */
+/* line 15, ../sass/about.scss */
 div.maincontent div.creditTitle p {
   text-align: center;
   line-height: 20px;
   font-weight: 500;
   z-index: 1;
 }
-/* line 22, ../sass/about.scss */
+/* line 21, ../sass/about.scss */
 div.maincontent div.creditTitle img {
   position: absolute;
   clip: rect(55px 200px 90px 10px);
@@ -32,106 +31,110 @@ div.maincontent div.creditTitle img {
   right: -20px;
   opacity: 0.15;
 }
+/* line 29, ../sass/about.scss */
+div.maincontent div.listcontent {
+  overflow: auto;
+}
 /* line 31, ../sass/about.scss */
-div.maincontent div.client {
+div.maincontent div.listcontent div.client {
   display: block;
   width: 95%;
   height: 20%;
   margin: 10px auto 5px;
 }
 /* line 36, ../sass/about.scss */
-div.maincontent div.client p {
+div.maincontent div.listcontent div.client p {
   text-align: center;
   line-height: 20px;
   padding: 5px;
 }
 /* line 42, ../sass/about.scss */
-div.maincontent div.clientName {
+div.maincontent div.listcontent div.clientName {
   display: block;
   width: 95%;
   height: 20%;
   margin: 5px auto;
 }
 /* line 47, ../sass/about.scss */
-div.maincontent div.clientName p {
+div.maincontent div.listcontent div.clientName p {
   text-align: center;
   line-height: 20px;
   padding: 2px;
 }
 /* line 54, ../sass/about.scss */
-div.maincontent div.server {
+div.maincontent div.listcontent div.server {
   display: block;
   width: 95%;
   height: 20%;
   margin: 10px auto 5px;
 }
 /* line 59, ../sass/about.scss */
-div.maincontent div.server p {
+div.maincontent div.listcontent div.server p {
   text-align: center;
   line-height: 20px;
   padding: 5px;
 }
 /* line 65, ../sass/about.scss */
-div.maincontent div.serverName {
+div.maincontent div.listcontent div.serverName {
   display: block;
   width: 95%;
   height: 20%;
   margin: 5px auto;
 }
 /* line 70, ../sass/about.scss */
-div.maincontent div.serverName p {
+div.maincontent div.listcontent div.serverName p {
   text-align: center;
   line-height: 20px;
   padding: 2px;
 }
 /* line 78, ../sass/about.scss */
-div.maincontent div.hard {
+div.maincontent div.listcontent div.hard {
   display: block;
   width: 95%;
   height: 20%;
   margin: 10px auto 5px;
 }
 /* line 83, ../sass/about.scss */
-div.maincontent div.hard p {
+div.maincontent div.listcontent div.hard p {
   text-align: center;
   line-height: 20px;
   padding: 5px;
 }
 /* line 89, ../sass/about.scss */
-div.maincontent div.hardName {
+div.maincontent div.listcontent div.hardName {
   display: block;
   width: 95%;
   height: 20%;
   margin: 5px auto;
 }
 /* line 94, ../sass/about.scss */
-div.maincontent div.hardName p {
+div.maincontent div.listcontent div.hardName p {
   text-align: center;
   line-height: 20px;
   padding: 2px;
 }
 /* line 101, ../sass/about.scss */
-div.maincontent div.thanks {
+div.maincontent div.listcontent div.thanks {
   display: block;
   width: 95%;
   height: 20%;
   margin: 10px auto 5px;
 }
 /* line 106, ../sass/about.scss */
-div.maincontent div.thanks p {
+div.maincontent div.listcontent div.thanks p {
   text-align: center;
   line-height: 20px;
   padding: 5px;
 }
 /* line 112, ../sass/about.scss */
-div.maincontent div.thanksName {
+div.maincontent div.listcontent div.thanksName {
   display: block;
   width: 95%;
   height: 20%;
   margin: 5px auto 10px;
 }
 /* line 117, ../sass/about.scss */
-div.maincontent div.thanksName p {
+div.maincontent div.listcontent div.thanksName p {
   text-align: center;
   line-height: 20px;
   padding: 2px;
