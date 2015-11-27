@@ -18,7 +18,7 @@ $(function(){
 		prevCounter--;
 		if(prevCounter == 0) { $("#seek-next").css({"visibility":"hidden"}); }
 		var sendData = {user:"keita", date:parseInt($("#photo-view input").val()) };
-		console.log(sendData.date);
+		// console.log(sendData);
 		loadNextState(sendData);
 		return false;
 	});
@@ -26,16 +26,21 @@ $(function(){
 
 function loadPrevState(sendData) {
 	$.getJSON("http://54.199.139.148/cloud_garden_server/api/getPastPreviousState", sendData, function(json){
-			// console.log(new Date(parseInt(json.date)));
-			loadSchedule(json.date);
-			updatePhotoBox(json);
+			// console.log(json.date);
+			if(json.date != "-1") {
+				loadSchedule(json.date);
+				updatePhotoBox(json);				
+			}
 		});
 }
 
 function loadNextState(sendData) {
 	$.getJSON("http://54.199.139.148/cloud_garden_server/api/getPastNextState", sendData, function(json){
-			loadSchedule(json.date);
-			updatePhotoBox(json);
+			// console.log(json);
+			if(json.date != "-1") {
+				loadSchedule(json.date);
+				updatePhotoBox(json);		
+			}
 		});
 }
 
@@ -51,12 +56,22 @@ function updatePhotoBox(json) {
 
 function loadSchedule(millisec) {
 	$("#log-content ul").text("");
+	var randomVal = ((new Date(parseInt(millisec))).getDate())%2;
 	var sendData = {user:"keita", date:millisec};
 	$.getJSON("http://54.199.139.148/cloud_garden_server/api/getScheduleList", sendData, function(json) {
-		$.each(json.schedule, function(index, item) {
-			var date = new Date(parseInt(item.date));
-			$("#log-content ul").append("<li>" + (date.getFullYear()) + "年"+(date.getMonth()+1)+"月"+(date.getDate())+"日 "+(date.getHours())+":"+(date.getMinutes())+"</li>");
-		});
+		if(json.schedule.length > 0) {
+			$.each(json.schedule, function(index, item) {
+				var date = new Date(parseInt(item.date));
+				$("#log-content ul").append("<li>" + (date.getFullYear()) + "年"+(date.getMonth()+1)+"月"+(date.getDate())+"日 "+(date.getHours())+":"+(date.getMinutes())+"</li>");
+			});
+			var img = randomVal == 0 ? "happy" : "default";
+			$("#log-content ul").css({"background-image":"url(img/character/character-"+img+".png)"});
+		} else {
+			var msg = randomVal == 0 ? "今日は水がもらえなかったよ。<br>おなかすいたよ。" : "今日も水やりがなかったよ。。。<br>ご主人様は忙しいのかなぁ？";
+			$("#log-content ul").append("<li>"+msg+"</li>");
+			var img = randomVal == 0 ? "oh" : "sad";
+			$("#log-content ul").css({"background-image":"url(img/character/character-"+img+".png)"});
+		}
 	});
 }
 

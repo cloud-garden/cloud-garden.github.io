@@ -19,10 +19,15 @@ function loadTodaySchedule(millisec) {
 	var sendData = {user:"keita", date:millisec};
 	$.getJSON("http://54.199.139.148/cloud_garden_server/api/getScheduleList", sendData, function(json) {
 		console.log(json);
-		$.each(json.schedule, function(index, item) {
-			var date = new Date(parseInt(item.date));
-			$("#log-content ul").append("<li>" + (date.getFullYear()) + "年"+(date.getMonth()+1)+"月"+(date.getDate())+"日 "+(date.getHours())+":"+(("0"+date.getMinutes()).slice(-2))+"</li>");
-		});
+		if(json.schedule.length > 0) {
+			$.each(json.schedule, function(index, item) {
+				var date = new Date(parseInt(item.date));
+				$("#log-content ul").append("<li>" + (date.getFullYear()) + "年"+(date.getMonth()+1)+"月"+(date.getDate())+"日 "+(date.getHours())+":"+(date.getMinutes())+"</li>");
+			});			
+		} else {
+			var msg = ((new Date(parseInt(millisec))).getDate())%2 == 0 ? "今日は水がもらえなかったよ。<br>おなかすいたよ。" : "今日も水やりがなかったよ。。。<br>ご主人様は忙しいのかなぁ？";
+			$("#log-content ul").append("<li>"+msg+"</li>");
+		}
 	});
 }
 
