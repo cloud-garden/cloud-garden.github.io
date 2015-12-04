@@ -56,6 +56,8 @@ function updateCharacter(temp, hum) {
 	}
 	$("#character-comment p").html(message);
   $("#character-img").css({"background-image": "url(img/character/character-"+imgURL+".png)"});
+	$("#log-content ul").css({"background-image":"url(img/character/character-"+imgURL+".png)"});
+
 }
 
 function getQuerystring(key, default_)  {
