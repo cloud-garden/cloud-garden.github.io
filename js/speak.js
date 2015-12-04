@@ -23,6 +23,7 @@ $(function(){
 			if(!isSpeaking) {
 				isSpeaking = true;
 		    msg.text = $("#character-comment p").text();
+		    			console.log("ok")
 		    speechSynthesis.speak(msg);
 			}
 		});

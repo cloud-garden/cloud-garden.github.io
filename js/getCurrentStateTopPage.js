@@ -2,7 +2,7 @@ $(function(){
 	getPhoto();
 	setInterval(function(){
 		getPhoto();
-  },10000);
+  },5000);
 });
 
 function getPhoto() {

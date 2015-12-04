@@ -1,122 +1,125 @@
 div.maincontent{
       display:block;
       width:95%;
+      height:90%;
       margin:auto;
       border-bottom:solid thin;
-  div.creditTitle{
-      display:block;
-      width:95%;
-      height:20px;
-      margin: 5px auto;
-      padding: 10px;
-      border-bottom:solid thin;
-      border-radius:10px 10px 0px 0px;
-      background-color:#faf0e6;
-      p{
-        text-align:center;
-        line-height:20px;
-        font-weight:500;
-        z-index : 1;
+    div.creditTitle{
+        display:block;
+        width:95%;
+        height:20px;
+        margin: 5px auto;
+        padding: 10px;
+        border-bottom:solid thin;
+        border-radius:10px 10px 0px 0px;
+        background-color:#faf0e6;
+        p{
+          text-align:center;
+          line-height:20px;
+          font-weight:500;
+          z-index : 1;
+          }
+        img{
+          position:absolute;
+          clip: rect(55px 200px 90px 10px);
+          top:3px;
+          right:-20px;
+          opacity: 0.15;
         }
-      img{
-        position:absolute;
-        clip: rect(55px 200px 90px 10px);
-        top:3px;
-        right:-20px;
-        opacity: 0.15;
       }
-    }
+  div.listcontent{
+      overflow:auto;
+      div.client{
+        display:block;
+        width:95%;
+        height:20%;
+        margin: 8px auto 5px;
+        p{
+          text-align:center;
+          line-height:20px;
+          padding:5px;
+        }
+      }
+      div.clientName{
+        display:block;
+        width:95%;
+        height:20%;
+        margin: 5px auto;
+        p{
+          text-align:center;
+          line-height:20px;
+          padding:2px;
+        }
+      }
 
-    div.client{
-      display:block;
-      width:95%;
-      height:20%;
-      margin: 10px auto 5px;
-      p{
-        text-align:center;
-        line-height:20px;
-        padding:5px;
+       div.server{
+        display:block;
+        width:95%;
+        height:20%;
+        margin: 8px auto 5px;
+        p{
+          text-align:center;
+          line-height:20px;
+          padding:5px;
+        }
       }
-    }
-    div.clientName{
-      display:block;
-      width:95%;
-      height:20%;
-      margin: 5px auto;
-      p{
-        text-align:center;
-        line-height:20px;
-        padding:2px;
+      div.serverName{
+        display:block;
+        width:95%;
+        height:20%;
+        margin: 5px auto;
+        p{
+          text-align:center;
+          line-height:20px;
+          padding:2px;
+        }
       }
-    }
-
-     div.server{
-      display:block;
-      width:95%;
-      height:20%;
-      margin: 10px auto 5px;
-      p{
-        text-align:center;
-        line-height:20px;
-        padding:5px;
-      }
-    }
-    div.serverName{
-      display:block;
-      width:95%;
-      height:20%;
-      margin: 5px auto;
-      p{
-        text-align:center;
-        line-height:20px;
-        padding:2px;
-      }
-    }
 
 
-    div.hard{
-      display:block;
-      width:95%;
-      height:20%;
-      margin: 10px auto 5px;
-      p{
-        text-align:center;
-        line-height:20px;
-        padding:5px;
+      div.hard{
+        display:block;
+        width:95%;
+        height:20%;
+        margin: 8px auto 5px;
+        p{
+          text-align:center;
+          line-height:20px;
+          padding:5px;
+        }
       }
-    }
-    div.hardName{
-      display:block;
-      width:95%;
-      height:20%;
-      margin: 5px auto;
-      p{
-        text-align:center;
-        line-height:20px;
-        padding: 2px;
+      div.hardName{
+        display:block;
+        width:95%;
+        height:20%;
+        margin: 5px auto;
+        p{
+          text-align:center;
+          line-height:20px;
+          padding: 2px;
+        }
       }
-    }
 
-     div.thanks{
-      display:block;
-      width:95%;
-      height:20%;
-      margin: 10px auto 5px;
-      p{
-        text-align:center;
-        line-height:20px;
-        padding:5px;
+       div.thanks{
+        display:block;
+        width:95%;
+        height:20%;
+        margin: 8px auto 5px;
+        p{
+          text-align:center;
+          line-height:20px;
+          padding:5px;
+        }
       }
-    }
-    div.thanksName{
-      display:block;
-      width:95%;
-      height:20%;
-      margin: 5px auto 10px;
-      p{
-        text-align:center;
-        line-height:20px;
-        padding:2px;
+      div.thanksName{
+        display:block;
+        width:95%;
+        height:20%;
+        margin: 5px auto 10px;
+        p{
+          text-align:center;
+          line-height:20px;
+          padding:2px;
+        }
       }
     }
 }
